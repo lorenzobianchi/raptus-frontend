@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PagesModule } from 'src/pages/pages.module';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,11 @@ import { PagesModule } from 'src/pages/pages.module';
   ],
   imports: [
     BrowserModule,
+    ComponentsModule,
+    PagesModule,
     AppRoutingModule,
-    PagesModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

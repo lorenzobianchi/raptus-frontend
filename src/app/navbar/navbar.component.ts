@@ -7,8 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   navbarTitle: string;
+  links: Object[];
   constructor() {
     this.navbarTitle = 'Raptus Foundation ⛰️';
+    this.links = [
+      {
+        path: '/home',
+        text: 'Home'
+      },
+      {
+        path: 'footpaths',
+        text: 'Sentieri'
+      },
+      {
+        path: 'falesie',
+        text: 'Falesie'
+      },
+      {
+        path: 'blog',
+        text: 'Blog'
+      }
+    ];
   }
 
   ngOnInit() {
